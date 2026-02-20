@@ -1,5 +1,5 @@
 import { useSeoMeta } from '@unhead/react';
-import { DMMessagingInterface } from '@/components/dm/DMMessagingInterface';
+import { DMMessagingInterface } from '@samthomson/nostr-messaging/ui';
 
 const Messages = () => {
   useSeoMeta({
