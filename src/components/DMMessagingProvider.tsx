@@ -109,6 +109,6 @@ export function DMMessagingProvider({ children }: DMMessagingProviderProps) {
     follows: [],
     appConfig,
   };
-
-  return <DMProvider deps={deps}>{children}</DMProvider>;
+  
+  return <DMProvider deps={deps} config={{ ui: { showShorts: false, showSearch: true } }}>{children}</DMProvider>;
 }
