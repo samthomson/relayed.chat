@@ -8,6 +8,8 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+		// Package UI uses Tailwind; its classes must be included or the two-panel layout breaks (list gets no width, chat gets 0 space).
+		"./node_modules/@samthomson/nostr-messaging/dist/**/*.js",
 	],
 	prefix: "",
 	theme: {
